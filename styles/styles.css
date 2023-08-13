@@ -11,7 +11,7 @@ body {
 
 .main-content {
     background-color: #fff;
-    padding: 30px;
+    padding: 10px;
 }
 
 /* about styles */
@@ -44,10 +44,83 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #595959;
-    width: 400px;  
+    width: auto;  
 }
 
 /* projects style */
+
+.promo {
+    background: #F1F5F8;
+    box-shadow: 0px 4px 68px rgba(33, 33, 33, 0.06);
+    min-width: 345px;
+    height: auto;
+    z-index: 10;
+  }
+  .promo__wrapper {
+    padding: 44px 24px;
+  }
+  
+  .promo__menu {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .promo__title {
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .promo__link {
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 140%;
+    color: #2C2F36;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .promo__link:hover {
+    color: #2F80ED;
+  }
+  .promo__text {
+    min-width: 246px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #2C2F36;
+  }
+
+  .promo__list {
+    padding-left: 0px;
+  }
+
+  .promo__list-item {
+    margin-bottom: 25px;
+    list-style: none;
+  }
+  .promo__list-item--details {
+    background: url("../img/price_plus.png") right 5px no-repeat;
+    border-bottom: rgba(180, 187, 206, 0.3) 3px solid;
+  }
+  .promo__list-item--details:hover {
+    background: url("../img/plus_blu.png") right 5px no-repeat;
+  }
+  .promo__list-item--details[open] {
+    background: url("../img/minus_blu.png") right 10px no-repeat;
+    border-bottom: #2F80ED 3px solid;
+  }
+  .promo__list-item--details[open] .promo__title {
+    color: #2F80ED;
+  }
+  .promo__list-item--details[open] .promo__text {
+    padding-bottom: 15px;
+  }
+  
+ 
 
 .projects {
   
@@ -178,7 +251,7 @@ color: #000000;
 }
 
 .sitebar-content {
-    width: 370px;
+    width: auto;
     margin-left: 40px;
 }
 
@@ -244,6 +317,10 @@ color: #000000;
         background-color: #fff;
         padding: 105px 90px;
     }
+
+    .promo {
+        width: 50%;
+      }
 
     .sitebar {
         background-color: #1E2939;
