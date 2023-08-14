@@ -120,12 +120,10 @@ body {
     padding-bottom: 15px;
   }
   
+  details summary::-webkit-details-marker {
+    display: none;
+  }
  
-
-.projects {
-  
-margin-bottom: 50px;
-}
 title {
     font-style: normal;
     font-weight: 700;
